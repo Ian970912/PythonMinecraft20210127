@@ -3,10 +3,11 @@ def plantTree(x,y,z):
     mc.setBlocks(x,y,z,x,y+4,z,17)
 
 from mcpi.minecraft import Minecraft
-mc=Minecraft.create()
-x,y,z=mc.player.getTilePos()
+mc = Minecraft.create()
+x,y,z = mc.player.getTilePos()
 for i in range(10):
-    for O in range(8):
-        for P in range(10):
-            plantTree(x+i*5,y+O*8,z+P*5)
-    
+    for j in range(8):
+        for k in range(10):
+            plantTree(x+i*5,y+j*5,z+k*5)
+
+
